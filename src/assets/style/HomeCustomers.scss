@@ -1,0 +1,129 @@
+// #app {
+//     height: 100%;
+//   }
+//   html,
+//   body {
+//     position: relative;
+//     height: 100%;
+//   }
+
+//   body {
+//     background: #eee;
+//     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+//     font-size: 14px;
+//     color: #000;
+//     margin: 0;
+//     padding: 0;
+//   }
+
+.custom {
+    // height: 30vh;
+    width: 100%;
+    background-color: transparent;
+
+    .swiper-pagination {
+        display: none;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+        // background-color: red;
+
+        padding: 50px;
+
+    }
+
+    .swiper .swiper-wrapper {
+        background-color: transparent !important;
+        // height: 400px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 17px;
+        background: #fff;
+        background-color: white;
+        border-radius: 20px;
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // padding: 30px;
+        // background-color: red;
+        height: max-content;
+        box-shadow: -3px 14px 28px 15px rgba(133, 203, 46, 0.51);
+        -webkit-box-shadow: -3px 14px 28px 15px #85cb2e82;
+        -moz-box-shadow: -3px 14px 28px 15px rgba(133, 203, 46, 0.51);
+
+        .container {
+            width: 100%;
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            padding: 20px;
+
+            .imgWrapper {
+                border: 3px solid #85CB2E;
+                width: 95px;
+                height: 95px;
+                border-radius: 50%;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .details {
+                width: 75%;
+
+                .comment {
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    color: #676666;
+                    padding-bottom: 30px;
+                }
+
+                .who {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    span {
+                        font-family: 'Nunito', sans-serif;
+                        margin-top: 0px;
+                        font-style: normal;
+                        font-weight: 900;
+                        color: red;
+                        font-size:medium;
+                    }
+
+                    p {
+                        font-size: 13px;
+                        padding-bottom: 10px;
+                        text-align: start;
+                    }
+
+                    .quotes {
+                        font-size: 40px;
+                        color: #85CB2E;
+                    }
+                }
+            }
+        }
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,252 @@
+// Variables
+$primary-color: rgb(133, 203, 46);
+$secondary-color: #A0A0A0;
+$link-color: #333;
+$hover-color: $primary-color;
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.contact {
+    width: 100%;
+    padding: 15px 0;
+    background-color: #F4F1EA;
+    font-size: medium;
+
+    .container {
+        width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .left {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .phone {
+                padding-right: 8px;
+                cursor: pointer;
+
+                strong {
+                    font-size: small;
+                }
+            }
+
+            .opening {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 10px;
+
+                span {
+                    padding-left: 4px;
+                }
+            }
+        }
+
+        .right {
+            width: 11%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+
+            .icons {
+                width: 60%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.navbar {
+    width: 100%;
+    padding: 15px 0;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    background-color: white;
+
+    .container {
+        width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+        border-bottom: 1px solid #e0e0e0;
+
+        .logo {
+            display: flex;
+            align-items: center;
+
+            .logo-image {
+                height: 40px;
+                margin-right: 10px;
+            }
+
+            .logo-text {
+                h1 {
+                    font-size: 24px;
+                    font-weight: bold;
+                    color: $primary-color;
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        .pages {
+            width: 70%;
+            display: flex;
+            margin-left: auto;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                position: relative;
+
+                a {
+                    text-decoration: none;
+                    color: $link-color;
+                    font-size: 16px;
+                    font-weight: 500;
+                    transition: color 0.3s;
+                    position: relative;
+
+                    // Creating the border-bottom animation
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 0;
+                        height: 2px; // Adjust the height of the border as needed
+                        background-color: $primary-color; // Set the border color
+                        transition: width 0.5s ease; // Controls the speed of the animation
+                    }
+
+                    &:hover {
+                        color: $hover-color;
+
+                        // Expanding the border when hovered
+                        &::before {
+                            width: 100%;
+                        }
+                    }
+
+                    &.active {
+                        color: $primary-color;
+                        font-weight: bold;
+
+                        &::before {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .contact {
+        .container {
+            width: 100%;
+            padding: 0 10px;
+        }
+    }
+
+    nav {
+        .navbar {
+            .container {
+                padding: 0 10px;
+                width: 100%;
+
+                .right {
+                    width: 10%;
+                    justify-content: space-around;
+                    border: none;
+
+                    .ado {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .contact {
+
+        .container {
+            width: 100%;
+
+            .left {
+                .opening {
+                    display: none;
+                }
+            }
+
+            .right {
+                width: 110px !important;
+            }
+        }
+    }
+
+    nav {
+        .navbar {
+            .container {
+                width: 100%;
+
+                .left {
+                    width: 20%;
+
+                    .options {
+                        display: none;
+                    }
+                }
+
+                .right {
+                    width: 20%;
+                    border: none;
+                    width: 120px !important;
+
+                    .ado {
+                        display: none;
+                    }
+
+                    .dropdownMenu {
+                        display: block !important;
+                        font-size: 27px;
+                        // background-color: red;
+                        padding: 0;
+                        color: #551A8B;
+
+                    }
+
+                    .baggy {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
