@@ -1,4 +1,6 @@
 import React from "react";
+import Hero from "../../components/HomeHero";
+
 import "../../assets/style/Home.scss";
 import health from "../../assets/images/health-bottle-cut.jpg";
 import {
@@ -9,13 +11,13 @@ import {
 import { GiFruitBowl } from "react-icons/gi";
 import { FaLeaf } from "react-icons/fa";
 import { BsArrowRepeat } from "react-icons/bs";
-import { SlClock } from "react-icons/sl";
-import { FiPhoneCall } from "react-icons/fi";
-import { IconName } from "react-icons/ai";
-import Feedbakcs from "../../components/HomeCustomers";
+
 export const Home = () => {
   return (
     <>
+      <section className="hero">
+        <Hero />
+      </section>
       <section className="info">
         <div className="container">
           <div className="left">
@@ -151,48 +153,10 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className="delivery">
-        <div className="container">
-          <div className="articles">
-            <h1>
-              <span>Free</span> Daily Food Delivery, Tailored to Your Schedule
-            </h1>
-            <p>
-              At NutriFit, we prioritize convenience and healthy eating. That's
-              why we offer free daily food delivery, making it easier to stay on
-              track with your wellness goals.
-            </p>
-            <p>Enjoy nutritious meals delivered hassle-free to your door.</p>
-            <ul>
-              <li>
-                <SlClock className="ben" />
-                <span>
-                  Delivery Service: Available daily{" "}
-                  <strong>from 8:00 AM to 12:00 PM</strong> for your
-                  convenience.
-                </span>
-              </li>
-              <li>
-                <FiPhoneCall className="ben" />
-                <span>
-                  Contact us: <strong>+49260-5731-08</strong> for more
-                  information.
-                </span>
-              </li>
-            </ul>
-            <button>Download Now</button>
-          </div>
-        </div>
-      </section>
-
-      <section className="feedbacks">
-        <div className="container">
-          <span>Testimonials</span>
-          <h1>What our NutriFit users are saying</h1>
-          <Feedbakcs />
-        </div>
-      </section>
       
+
+
+
       <div className="testi"></div>
 
       <section className="vlog">
