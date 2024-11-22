@@ -1,12 +1,85 @@
 import React from "react";
-import "../../assets/style/Navbar.scss"
+import "../../assets/style/Navbar.scss";
 import { FaRegClock } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
-import apple from "../../assets/images/apple.png"
+import logo from "../../assets/images/logo.png";
+import text from "../../assets/images/yazi.png";
+import { NavLink } from "react-router-dom";
+
+import { MenuOutlined } from "@ant-design/icons";
+import { Dropdown } from "antd";
 export const Navbar = () => {
+  const items = [
+    {
+      key: "1",
+      label: (
+        <a
+          target=""
+          rel="noopener noreferrer"
+          href="/"
+          style={{ textDecoration: "none" }}
+        >
+          Home
+        </a>
+      ),
+    },
+    {
+      key: "2",
+      label: (
+        <a
+          target=""
+          rel="noopener noreferrer"
+          href="/aboutUs"
+          style={{ textDecoration: "none" }}
+        >
+          About us
+        </a>
+      ),
+    },
+    {
+      key: "3",
+      label: (
+        <a
+          target=""
+          rel="noopener noreferrer"
+          href="/services"
+          style={{ textDecoration: "none" }}
+        >
+          Services
+        </a>
+      ),
+    },
+    {
+      key: "4",
+      label: (
+        <a
+          target=""
+          rel="noopener noreferrer"
+          href="/testimonials"
+          style={{ textDecoration: "none" }}
+        >
+          Testimonials
+        </a>
+      ),
+    },
+    {
+      key: "5",
+      label: (
+        <a
+          target=""
+          rel="noopener noreferrer"
+          href="/contact"
+          style={{ textDecoration: "none" }}
+        >
+          Contact
+        </a>
+      ),
+    },
+  ];
+
   return (
     <>
       <section className="contact">
@@ -14,12 +87,15 @@ export const Navbar = () => {
           <div className="left">
             <div className="phone">
               <span className="tel">
-                Call us: <span><strong>+994-55-9956118</strong></span>
+                Call us:{" "}
+                <span>
+                  <strong>+994-55-9956118</strong>
+                </span>
               </span>
             </div>
 
             <div className="opening">
-              <FaRegClock style={{ color: "rgb(98, 175, 3)"}}/>
+              <FaRegClock style={{ color: "rgb(98, 175, 3)" }} />
               <span>Opening Hours: 7:00 am - 9:00 pm (Mon - Sun)</span>
             </div>
           </div>
@@ -27,35 +103,97 @@ export const Navbar = () => {
           <div className="right">
             <span>Follow: </span>
             <div className="icons">
-              <FaFacebookF style={{ color: "rgb(98, 175, 3)"}}/>
-              <FaTwitter style={{ color: "rgb(98, 175, 3)"}}/>
-              <FaInstagram style={{ color: "rgb(98, 175, 3)"}}/>
-              <FaLinkedinIn style={{ color: "rgb(98, 175, 3)"}}/>
+              <FaFacebookF style={{ color: "rgb(98, 175, 3)" }} />
+              <FaTwitter style={{ color: "rgb(98, 175, 3)" }} />
+              <FaInstagram style={{ color: "rgb(98, 175, 3)" }} />
+              <FaLinkedinIn style={{ color: "rgb(98, 175, 3)" }} />
             </div>
           </div>
+          
         </div>
       </section>
 
       <nav className="navbar">
-            <div className="container">
+        <div className="container">
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "logo active" : "logo")}
+          >
             <div className="logo">
-                <img src={apple} alt="Nutrifit Logo" className="logo-image" />
-                <div className="logo-text">
-                    <h1>NutriFit</h1>
-                </div>
+              <img src={logo} alt="Nutrifit Logo" className="logo-image" />
+              <img src={text} alt="" className="logo-text" />
+              {/* <div className="logo-text">
+                <h1>NutriFit</h1>
+              </div> */}
             </div>
+          </NavLink>
 
-            <ul className="pages">
-                <li><a href="/" className="active">Home</a></li>
-                <li><a href="/about">About us</a></li>
-                <li><a href="/products">Products</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/contacts">Contacts</a></li>
-                <li><a href="/pages">Pages</a></li>
-                <li><a href="/multipage">Multipage</a></li>
-            </ul>
-            </div>
-        </nav>
+          <ul className="pages">
+            <li>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "logo active" : "logo"
+                }
+              >
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/aboutUs"
+                className={({ isActive }) =>
+                  isActive ? "logo active" : "logo"
+                }
+              >
+                About us
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/services"
+                className={({ isActive }) =>
+                  isActive ? "logo active" : "logo"
+                }
+              >
+                Services
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/testimonials"
+                className={({ isActive }) =>
+                  isActive ? "logo active" : "logo"
+                }
+              >
+                Testimonials
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive ? "logo active" : "logo"
+                }
+              >
+                Contact
+              </NavLink>
+            </li>
+          </ul>
+          <Dropdown
+            className="dropdownMenu"
+            menu={{
+              items,
+            }}
+            placement="bottomLeft"
+            arrow
+          >
+            <button>
+              <MenuOutlined />
+            </button>
+          </Dropdown>
+        </div>
+      </nav>
     </>
   );
 };

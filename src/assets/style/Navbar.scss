@@ -93,25 +93,22 @@ body {
 
         .logo {
             display: flex;
-            align-items: center;
+            align-items: end;
 
-            .logo-image {
+            .logo-image,
+            .logo-text {
                 height: 40px;
                 margin-right: 10px;
             }
 
             .logo-text {
-                h1 {
-                    font-size: 24px;
-                    font-weight: bold;
-                    color: $primary-color;
-                    margin-right: 5px;
-                }
+                height: 35px;
             }
+
         }
 
         .pages {
-            width: 70%;
+            width: 60%;
             display: flex;
             margin-left: auto;
             list-style: none;
@@ -165,7 +162,15 @@ body {
     }
 }
 
-@media screen and (max-width: 1200px) {
+.dropdownMenu {
+    background-color: transparent;
+    font-size: 25px;
+    border: 0;
+    color: #41B83D;
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
     .contact {
         .container {
             width: 100%;
@@ -178,16 +183,6 @@ body {
             .container {
                 padding: 0 10px;
                 width: 100%;
-
-                .right {
-                    width: 10%;
-                    justify-content: space-around;
-                    border: none;
-
-                    .ado {
-                        display: none;
-                    }
-                }
             }
         }
     }
@@ -203,49 +198,58 @@ body {
                 .opening {
                     display: none;
                 }
+
+                .phone {
+                    font-size: 13px;
+                }
             }
 
             .right {
-                width: 110px !important;
+                width: 140px !important;
+                font-size: 13px;
             }
         }
     }
 
-    nav {
-        .navbar {
-            .container {
-                width: 100%;
+    .navbar {
+        .container {
+            width: 100%;
 
-                .left {
-                    width: 20%;
+            // .left {
+            //     width: 20%;
 
-                    .options {
-                        display: none;
-                    }
-                }
+            //     .options {
+            //         display: none;
+            //     }
+            // }
 
-                .right {
-                    width: 20%;
-                    border: none;
-                    width: 120px !important;
+            // .right {
+            //     width: 20%;
+            //     border: none;
+            //     width: 120px !important;
 
-                    .ado {
-                        display: none;
-                    }
+            //     .ado {
+            //         display: none;
+            //     }
 
-                    .dropdownMenu {
-                        display: block !important;
-                        font-size: 27px;
-                        // background-color: red;
-                        padding: 0;
-                        color: #551A8B;
 
-                    }
 
-                    .baggy {
-                        display: none;
-                    }
-                }
+            //     .baggy {
+            //         display: none;
+            //     }
+            // }
+
+            .dropdownMenu {
+                display: block !important;
+                font-size: 27px;
+                // background-color: red;
+                padding: 0;
+                color: #551A8B;
+
+            }
+
+            .pages {
+                display: none;
             }
         }
     }

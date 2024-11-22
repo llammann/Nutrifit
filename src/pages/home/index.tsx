@@ -159,22 +159,21 @@ export const Home = () => {
 
       <div className="testi"></div>
 
-      <section className="vlog">
-        <div className="container">
-          <h1>
-            Stay Updated with <span>NutriFit</span>
-          </h1>
-          <p>
-            Stay inspired by exploring our latest videos on health, fitness, and
-            wellness. From expert tips to success stories, our vlog is designed
-            to keep you motivated on your journey to a healthier lifestyle.
-          </p>
-          <button>
-            <span>Visit </span>
-            <span className="red">Our Vlog</span>
-          </button>
-        </div>
-      </section>
+      <section className="callAction">
+  <div className="container">
+    <h1>
+      Your Health Journey Starts with <span>NutriFit</span>
+    </h1>
+    <p>
+      Ready to transform your lifestyle? Get personalized health tips, fitness tracking, and wellness advice at your fingertips. Take the first step today!
+    </p>
+    <button>
+      <span>Download </span>
+      <span className="red">Our App Now</span>
+    </button>
+  </div>
+</section>
+
     </>
   );
 };

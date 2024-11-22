@@ -1,0 +1,422 @@
+.aboutNutriFit {
+  width: 100%;
+  padding: 140px 0;
+  background-image: url("../images/vegetarianism-1248951_1280.jpg");
+  background-size: cover;
+  background-position: topssss;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+}
+.aboutNutriFit .container {
+  width: 1200px;
+  margin: auto;
+  transform: scaleX(-1);
+  color: #c9842b;
+  padding-bottom: 110px;
+}
+.aboutNutriFit .container span {
+  color: #85CB2E;
+}
+.aboutNutriFit .container h1 {
+  margin-bottom: 30px;
+  font-size: 45px;
+  color: #85CB2E;
+  border-left: 10px solid orange;
+  border-bottom: 2px solid orange;
+  padding: 0 0 10px 10px;
+}
+.aboutNutriFit .container h3 {
+  padding-bottom: 10px;
+  font-size: 25px;
+  color: white;
+}
+.aboutNutriFit .container p {
+  width: 70%;
+  line-height: 170%;
+  color: white;
+  font-size: 18px;
+}
+
+.ourStory {
+  width: 100%;
+  padding: 100px 0;
+  background-color: #F4F1EA;
+  font-family: "Arial", sans-serif;
+}
+.ourStory .container {
+  width: 1200px;
+  margin: auto;
+  /* Animations */
+}
+.ourStory .container h1 {
+  font-size: 45px;
+  color: #85CB2E;
+  margin-bottom: 20px;
+  animation: fadeInDown 1.5s ease-in-out;
+  border-left: 10px solid orange;
+  border-bottom: 2px solid orange;
+  padding: 0 0 10px 10px;
+}
+.ourStory .container p {
+  font-size: 22px;
+  color: #555;
+  line-height: 1.6;
+  margin: 0 auto;
+  animation: fadeInUp 2s ease-in-out;
+  padding-top: 20px;
+  font-weight: 500;
+}
+.ourStory .container p strong {
+  color: orange;
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.testi {
+  background-image: url("http://fitmeal.like-themes.com/wp-content/uploads/2019/10/testimonials-bg.png");
+  width: 100%;
+  height: 260px;
+  margin: auto;
+  background-color: #F4F1EA;
+}
+
+.ourBeliefs {
+  width: 100%;
+  padding: 100px 0;
+  background-color: #F4F1EA;
+  font-family: "Arial", sans-serif;
+  background-image: url("http://fitmeal.like-themes.com/wp-content/uploads/2019/10/veg_pattern_01.png?id=10839");
+  background-size: auto;
+  background-repeat: repeat;
+  background-position: center;
+  box-shadow: -4px 0px 84px 22px rgba(81, 135, 21, 0.72) inset;
+  -webkit-box-shadow: -4px 0px 84px 22px rgba(81, 135, 21, 0.72) inset;
+  -moz-box-shadow: -4px 0px 84px 22px rgba(81, 135, 21, 0.72) inset;
+}
+.ourBeliefs .container {
+  width: 1200px;
+  margin: auto;
+}
+.ourBeliefs .container h1 {
+  font-size: 45px;
+  color: #85CB2E;
+  margin-bottom: 20px;
+  animation: fadeInDown 1.5s ease-in-out;
+  border-left: 10px solid orange;
+  border-bottom: 2px solid orange;
+  padding: 0 0 10px 10px;
+}
+.ourBeliefs .container ul {
+  list-style: none;
+  padding: 50px 0;
+  width: 100%;
+}
+.ourBeliefs .container ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.ourBeliefs .container ul li .imgWrap {
+  transition: transform 2s ease-in-out;
+  transform-style: preserve-3d;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 7px 11px 34px 19px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 7px 11px 34px 19px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 7px 11px 34px 19px rgba(0, 0, 0, 0.45);
+}
+.ourBeliefs .container ul li .imgWrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ourBeliefs .container ul li .imgWrap:hover {
+  transform: rotateY(360deg);
+  transition: transform 2s ease-in-out;
+}
+.ourBeliefs .container ul li .article {
+  width: 50%;
+}
+.ourBeliefs .container ul li .article h3 {
+  font-size: 30px;
+  width: 70%;
+  border-left: 65px solid rgba(117, 175, 46, 0.4588235294);
+  padding: 20px;
+  border-radius: 100%;
+  padding-left: 0;
+}
+.ourBeliefs .container ul li .article i {
+  font-size: 22px;
+}
+
+.team {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+  background-color: #F4F1EA;
+}
+.team .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.team h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+.team .info {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #555;
+}
+.team .team-members {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 40px;
+}
+.team .team-member {
+  width: 23%;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  background: rgb(42, 71, 14);
+  background: linear-gradient(0deg, rgb(42, 71, 14) 7%, rgba(30, 46, 20, 0.9724264706) 70%);
+}
+.team .team-member:hover {
+  transform: scale(1.05);
+}
+.team .team-member .team-member-image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  margin: auto;
+}
+.team .team-member .team-member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-bottom: 4px solid #ddd;
+}
+.team .team-member .team-member-info {
+  position: relative;
+  color: #F9F9F9;
+  padding-top: 40px;
+  text-align: left;
+  width: 92%;
+  margin: auto;
+}
+.team .team-member .team-member-info h3,
+.team .team-member .team-member-info i,
+.team .team-member .team-member-info .accordion-header {
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.team .team-member .team-member-info .accordion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  padding-top: 25px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.team .team-member .team-member-info:hover h3,
+.team .team-member .team-member-info:hover i,
+.team .team-member .team-member-info:hover .accordion-header {
+  opacity: 0;
+  visibility: hidden;
+}
+.team .team-member .team-member-info:hover .accordion {
+  opacity: 1;
+  visibility: visible;
+}
+.team .team-member .team-member-info h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.team .team-member .team-member-info i {
+  font-size: 13px;
+  color: #85CB2E;
+  display: block;
+  margin-bottom: 15px;
+}
+.team .team-member .team-member-info .accordion-header {
+  font-size: 12px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 8px;
+}
+.team .team-member .team-member-info .accordion-header .down {
+  padding-left: 5px;
+  font-size: 20px;
+  color: #558b34;
+}
+.team .team-member .team-member-info .accordion-item {
+  border-bottom: 1px solid #ddd;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+.team .team-member .team-member-info .accordion-item .accordion-content {
+  font-size: 14px;
+  color: #85CB2E;
+  line-height: 180%;
+}
+.team .team-member .team-member-info .accordion-item .accordion-content span {
+  color: white;
+}
+@media (max-width: 768px) {
+  .team .team-members {
+    flex-direction: column;
+    align-items: center;
+  }
+  .team .team-member {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  .team .team-member-image {
+    height: 200px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .container {
+    width: 90% !important;
+  }
+  .aboutNutriFit .container {
+    padding-bottom: 0;
+  }
+  .aboutNutriFit .container h1 {
+    font-size: 35px;
+  }
+  .aboutNutriFit .container h3 {
+    font-size: 25px;
+  }
+  .aboutNutriFit .container p {
+    font-size: 18px;
+  }
+  .ourStory .container h1 {
+    font-size: 35px;
+  }
+  .ourStory .container p {
+    font-size: 18px;
+  }
+  .ourBeliefs .container h1 {
+    font-size: 35px;
+  }
+  .ourBeliefs .container ul :nth-child(2) .imgWrap {
+    margin-left: 0;
+    background-color: red;
+  }
+  .ourBeliefs .container ul li {
+    justify-content: space-around;
+  }
+  .ourBeliefs .container ul li .article h3 {
+    font-size: 25px;
+    padding: 0 0 4px 0;
+    width: 100%;
+    margin-bottom: 10px;
+    border-left: none;
+    border-bottom: 2px solid #558b34;
+    border-radius: 0;
+  }
+  .ourBeliefs .container ul li .article i {
+    font-size: 18px;
+  }
+  .ourBeliefs .container ul li .imgWrap {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: end;
+    margin-right: 0;
+  }
+  .ourBeliefs .container ul li :nth-child(2) .imgWrap {
+    margin-left: 0;
+    border: 10px solid red;
+  }
+  .team .container .team-member {
+    width: 30%;
+  }
+}
+@media (max-width: 780px) {
+  .aboutNutriFit .container h1 {
+    font-size: 30px;
+  }
+  .aboutNutriFit .container i {
+    font-size: 23px;
+  }
+  .aboutNutriFit .container p {
+    width: 90%;
+  }
+  .ourStory .container h1 {
+    font-size: 30px;
+  }
+  .ourBeliefs {
+    padding: 80px 0;
+  }
+  .ourBeliefs .container h1 {
+    font-size: 30px;
+    margin: 0;
+  }
+  .ourBeliefs .container ul {
+    padding-bottom: 0;
+  }
+  .ourBeliefs .container ul li {
+    margin: 50px 0;
+    justify-content: space-around;
+  }
+  .ourBeliefs .container ul li .imgWrap {
+    width: 180px;
+    height: 180px;
+  }
+  .ourBeliefs .container ul li .article {
+    width: 60%;
+  }
+  .ourBeliefs .container ul li .article h3 {
+    font-size: 16px;
+  }
+  .ourBeliefs .container ul li .article i {
+    font-size: 13px;
+  }
+  .ourBeliefs .container ul :nth-child(1) {
+    margin: 0;
+  }
+  .ourBeliefs .container ul :nth-child(2) .imgWrap {
+    margin-right: 10px;
+  }
+  .team .container .team-member {
+    width: 70%;
+  }
+}/*# sourceMappingURL=AboutUs.css.map */

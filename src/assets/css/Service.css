@@ -1,0 +1,188 @@
+@charset "UTF-8";
+.delivery {
+  border-bottom: 10px solid #9FBB40;
+  padding: 140px 0;
+  width: 100%;
+  background-color: white;
+  background-image: url("https://cdn.dribbble.com/users/1520241/screenshots/4830907/media/e1bd471e4669b242d33c569fc84b72e6.gif");
+  height: 735px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(100%);
+  transform: scaleX(-1);
+}
+.delivery .container {
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+  transform: scaleX(-1);
+}
+.delivery .container .articles {
+  width: 80%;
+}
+.delivery .container .articles h1 {
+  line-height: 160%;
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+.delivery .container .articles h1 span {
+  color: rgb(133, 203, 46);
+}
+.delivery .container .articles p {
+  width: 60%;
+  line-height: 180%;
+}
+.delivery .container .articles ul {
+  list-style: none;
+  padding-top: 30px;
+}
+.delivery .container .articles ul li {
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.delivery .container .articles ul li strong {
+  font-weight: 900;
+  color: black;
+}
+.delivery .container .articles ul li .ben {
+  color: rgb(133, 203, 46);
+  font-size: 40px;
+  margin-right: 20px;
+}
+.delivery .container .articles button {
+  display: inline-block;
+  padding: 20px 55px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+.delivery .container .articles button:hover {
+  background-color: rgb(133, 203, 46);
+}
+
+.premium-services {
+  background-color: #f9f9f9;
+  padding: 100px 0;
+  text-align: center;
+  box-shadow: 27px 68px 42px -20px rgba(133, 203, 46, 0.45) inset;
+  -webkit-box-shadow: 27px 68px 42px -20px rgba(133, 203, 46, 0.45) inset;
+  -moz-box-shadow: 27px 68px 42px -20px rgba(133, 203, 46, 0.45) inset;
+}
+.premium-services .container {
+  max-width: 1200px;
+  margin: auto;
+}
+.premium-services .container span {
+  color: rgb(133, 203, 46);
+  font-size: 25px;
+  font-family: "Pencerio";
+}
+.premium-services .container h1 {
+  font-size: 30px;
+  padding-top: 20px;
+}
+.premium-services .container p {
+  font-size: 13px;
+  width: 80%;
+  margin: auto;
+  padding: 30px 0;
+  padding-bottom: 50px;
+}
+.premium-services .services {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.premium-services .service-card {
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 40px 20px;
+  padding-top: 40px;
+  flex: 1 1 calc(33.333% - 20px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.premium-services .service-card .imgwrap {
+  width: 80%;
+  height: 150px;
+  margin-top: 20px;
+}
+.premium-services .service-card .imgwrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.premium-services .service-card h3 {
+  font-size: 1.5rem;
+  color: #222;
+  padding-bottom: 10px;
+}
+.premium-services .service-card p {
+  font-size: 1rem;
+  color: #666;
+  padding-bottom: 0px;
+}
+.premium-services .service-card .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.premium-services .service-card .shiny-text {
+  color: #85cb2e;
+  display: inline-block;
+  position: relative;
+  font-weight: bold;
+  overflow: hidden;
+  background: linear-gradient(90deg, rgb(133, 203, 46), #3ebc44, #334d3e); /* Arka plan gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* Parlama Efekti */
+}
+.premium-services .service-card .shiny-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%; /* Efekt soldan başlasın */
+  width: 150%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+  transform: skewX(-30deg);
+  animation: shine 2s infinite; /* Animasyonu sürekli tekrarla */
+}
+@keyframes shine {
+  0% {
+    left: -150%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+.premium-services .card2 {
+  box-shadow: -2px -8px 148px 7px rgba(248, 186, 65, 0.31) inset;
+  -webkit-box-shadow: -2px -8px 148px 7px rgba(248, 186, 65, 0.31) inset;
+  -moz-box-shadow: -2px -8px 148px 7px rgba(248, 186, 65, 0.31) inset;
+}
+.premium-services .card1 {
+  box-shadow: -2px -8px 148px 7px rgba(95, 201, 237, 0.31) inset;
+  -webkit-box-shadow: -2px -8px 148px 7px rgba(95, 201, 237, 0.31) inset;
+  -moz-box-shadow: -2px -8px 148px 7px rgba(95, 201, 237, 0.31) inset;
+}
+.premium-services .card3 {
+  box-shadow: -2px -8px 148px 7px rgba(186, 104, 200, 0.31) inset;
+  -webkit-box-shadow: -2px -8px 148px 7px rgba(186, 104, 200, 0.31) inset;
+  -moz-box-shadow: -2px -8px 148px 7px rgba(186, 104, 200, 0.31) inset;
+}/*# sourceMappingURL=Service.css.map */

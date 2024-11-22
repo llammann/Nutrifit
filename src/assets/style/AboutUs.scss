@@ -152,13 +152,15 @@ $hover-scale: 1.05;
             list-style: none;
             // background-color: yellow;
             padding: 50px 0;
+            width: 100%;
 
             li {
                 // padding: 30px;
                 // background-color: purple;
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                justify-content: space-between;
+                width: 100%;
 
                 .imgWrap {
                     transition: transform 2s ease-in-out;
@@ -168,7 +170,7 @@ $hover-scale: 1.05;
                     height: 450px;
                     // background-color: red;
                     border-radius: 50%;
-                    margin: 0 40px;
+                    // margin: 0 40px;
                     overflow: hidden;
                     box-shadow: 7px 11px 34px 19px rgba(0, 0, 0, 0.45);
                     -webkit-box-shadow: 7px 11px 34px 19px rgba(0, 0, 0, 0.45);
@@ -187,7 +189,7 @@ $hover-scale: 1.05;
                 }
 
                 .article {
-                    width: 55%;
+                    width: 50%;
 
                     h3 {
                         font-size: 30px;
@@ -211,7 +213,8 @@ $hover-scale: 1.05;
 .team {
     padding: 80px 0;
     background-color: $background-color;
-   
+    background-color: #F4F1EA;
+
     .container {
         max-width: 1200px;
         margin: 0 auto;
@@ -232,13 +235,13 @@ $hover-scale: 1.05;
 
     .team-members {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-wrap: wrap;
-        gap: 25px;
+        row-gap: 40px;
     }
 
     .team-member {
-        width: 280px;
+        width: 23%;
         height: 400px;
         background-color: #fff;
         border-radius: 10px;
@@ -340,8 +343,8 @@ $hover-scale: 1.05;
             .accordion-item {
                 border-bottom: 1px solid $border-color;
                 height: 100%;
-display: flex;
-align-items: center;
+                display: flex;
+                align-items: center;
                 margin: auto;
 
                 .accordion-content {
@@ -373,5 +376,177 @@ align-items: center;
         .team-member-image {
             height: 200px;
         }
+    }
+}
+
+@media (max-width: 1300px) {
+    .container {
+        width: 90% !important;
+    }
+
+
+    .aboutNutriFit {
+
+        // padding: 110px 0;
+        .container {
+            padding-bottom: 0;
+
+            h1 {
+                font-size: 35px;
+            }
+
+            h3 {
+                font-size: 25px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .ourStory .container {
+
+        h1 {
+            font-size: 35px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .ourBeliefs .container {
+        h1 {
+            font-size: 35px;
+        }
+
+        ul {
+            :nth-child(2) .imgWrap {
+                margin-left: 0;
+                background-color: red;
+
+            }
+
+            li {
+                justify-content: space-around;
+
+                .article {
+                    h3 {
+                        font-size: 25px;
+                        padding: 0 0 4px 0;
+                        width: 100%;
+                        margin-bottom: 10px;
+
+                        border-left: none;
+                        border-bottom: 2px solid #558b34;
+                        border-radius: 0;
+                    }
+
+                    i {
+                        font-size: 18px;
+                    }
+                }
+
+                .imgWrap {
+                    width: 300px;
+                    height: 300px;
+                    display: flex;
+                    justify-content: end;
+
+                    margin-right: 0;
+                }
+
+                :nth-child(2) {
+                    .imgWrap {
+                        margin-left: 0;
+                        border: 10px solid red;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .team .container {
+        .team-member {
+            width: 30%;
+        }
+    }
+
+
+
+}
+
+@media (max-width: 780px) {
+    .aboutNutriFit .container {
+        h1 {
+            font-size: 30px;
+        }
+
+        i {
+            font-size: 23px;
+        }
+
+        p {
+            width: 90%;
+        }
+    }
+
+    .ourStory .container h1 {
+        font-size: 30px;
+    }
+
+    .ourBeliefs {
+        padding: 80px 0;
+
+        .container {
+            h1 {
+                font-size: 30px;
+                margin: 0;
+            }
+
+            ul {
+                padding-bottom: 0;
+
+                li {
+                    margin: 50px 0;
+                    justify-content: space-around;
+
+                    .imgWrap {
+                        width: 180px;
+                        height: 180px;
+                    }
+
+                    .article {
+                        width: 60%;
+
+                        h3 {
+                            font-size: 16px;
+                        }
+
+                        i {
+                            font-size: 13px;
+                        }
+                    }
+                }
+
+                :nth-child(1) {
+                    margin: 0;
+                }
+
+                :nth-child(2) {
+                    .imgWrap {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .team .container .team-member {
+        width: 70%;
     }
 }

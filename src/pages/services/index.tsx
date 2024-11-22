@@ -3,7 +3,7 @@ import { SlClock } from "react-icons/sl";
 import { FiPhoneCall } from "react-icons/fi";
 
 import "../../assets/style/Service.scss";
-export const Service = () => {
+export const Services = () => {
   return (
     <>
       <section className="delivery">

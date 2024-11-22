@@ -1,0 +1,202 @@
+.info {
+  width: 100%;
+  padding: 60px 0 100px 0;
+}
+.info .container {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+}
+.info .container .left {
+  width: 50%;
+}
+.info .container .left h1,
+.info .container .left .with {
+  font-size: 50px;
+  color: rgb(64, 62, 62);
+  padding-bottom: 10px;
+}
+.info .container .left strong {
+  color: rgb(133, 203, 46);
+  font-size: 50px;
+}
+.info .container .left .text {
+  color: rgb(88, 86, 86);
+  font-size: medium;
+  padding-bottom: 45px;
+  padding-top: 30px;
+  line-height: 180%;
+  font-size: 16px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.info .container .left .learn_more {
+  display: inline-block;
+  padding: 20px 55px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+.info .container .left .learn_more:hover {
+  background-color: rgb(133, 203, 46);
+}
+.info .container .right {
+  width: 50%;
+  padding-left: 20px;
+  display: flex;
+}
+.info .container .right .image {
+  width: 60%;
+  height: 100%;
+}
+.info .container .right .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain !important;
+}
+.info .container .right .options {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.info .container .right .options ul {
+  list-style: none;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+}
+.info .container .right .options ul li {
+  display: flex;
+  align-items: center;
+}
+.info .container .right .options ul li .bird {
+  padding-right: 10px;
+}
+
+.feedbacks {
+  width: 100%;
+  padding: 100px 0 10px 0;
+  box-shadow: 27px 68px 42px -20px rgba(133, 203, 46, 0.45) inset;
+  -webkit-box-shadow: 27px 68px 42px -20px rgba(133, 203, 46, 0.45) inset;
+  -moz-box-shadow: 27px 68px 42px -20px rgba(133, 203, 46, 0.45) inset;
+}
+.feedbacks .container {
+  width: 1200px;
+  margin: auto;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.feedbacks span {
+  color: rgb(133, 203, 46);
+  font-size: 25px;
+  font-family: "Pencerio";
+}
+.feedbacks h1 {
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.testio {
+  background-image: url("http://fitmeal.like-themes.com/wp-content/uploads/2019/10/testimonials-bg.png");
+  width: 100%;
+  height: 260px;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+.transformation {
+  width: 100%;
+  box-shadow: 2px -2px 46px 17px rgba(0, 0, 0, 0.41) inset;
+  -webkit-box-shadow: 2px -2px 46px 17px rgba(0, 0, 0, 0.41) inset;
+  -moz-box-shadow: 2px -2px 46px 17px rgba(0, 0, 0, 0.41) inset;
+}
+.transformation .container {
+  width: 1200px;
+  margin: auto;
+  padding: 100px 0;
+  padding-bottom: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.transformation .container .left {
+  width: 50%;
+  height: 420px !important;
+  padding: 50px 90px;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.transformation .container .left .head {
+  font-size: 20px;
+  color: rgb(133, 203, 46);
+  padding-bottom: 15px;
+  font-weight: 900;
+}
+.transformation .container .left h1 {
+  font-size: 40px;
+  font-weight: 900;
+  padding-bottom: 20px;
+  line-height: 1.2;
+}
+.transformation .container .left h1 span {
+  color: rgb(133, 203, 46);
+}
+.transformation .container .left p {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #676666;
+  padding-bottom: 20px;
+}
+.transformation .container .left div {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-bottom: 15px;
+}
+.transformation .container .left div .mark {
+  color: rgb(133, 203, 46);
+  margin-right: 6px;
+  font-size: 23px;
+}
+.transformation .container .right {
+  width: 50%;
+  height: 420px;
+}
+
+.metrics {
+  width: 100%;
+  padding: 100px 0 100px 0;
+  background: linear-gradient(135deg, #85CB2E, #54811d);
+}
+.metrics span {
+  font-size: 25px;
+  font-family: "Pencerio";
+  text-align: center;
+  display: block;
+}
+.metrics h1 {
+  font-size: 30px;
+  padding-top: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+.metrics .container {
+  width: 100%;
+  margin: auto;
+  background-color: transparent;
+}/*# sourceMappingURL=Testimonials.css.map */

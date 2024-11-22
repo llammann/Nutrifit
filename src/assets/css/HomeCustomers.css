@@ -1,0 +1,90 @@
+.custom {
+  width: 100%;
+  background-color: transparent;
+}
+.custom .swiper-pagination {
+  display: none;
+}
+.custom .swiper {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+}
+.custom .swiper .swiper-wrapper {
+  background-color: transparent !important;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.custom .swiper-slide {
+  text-align: center;
+  font-size: 17px;
+  background: #fff;
+  background-color: white;
+  border-radius: 20px;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  box-shadow: -3px 14px 28px 15px rgba(133, 203, 46, 0.51);
+  -webkit-box-shadow: -3px 14px 28px 15px rgba(133, 203, 46, 0.5098039216);
+  -moz-box-shadow: -3px 14px 28px 15px rgba(133, 203, 46, 0.51);
+}
+.custom .swiper-slide .container {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 20px;
+}
+.custom .swiper-slide .container .imgWrapper {
+  border: 3px solid #85CB2E;
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.custom .swiper-slide .container .imgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.custom .swiper-slide .container .details {
+  width: 75%;
+}
+.custom .swiper-slide .container .details .comment {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #676666;
+  padding-bottom: 30px;
+}
+.custom .swiper-slide .container .details .who {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.custom .swiper-slide .container .details .who span {
+  font-family: "Nunito", sans-serif;
+  margin-top: 0px;
+  font-style: normal;
+  font-weight: 900;
+  color: red;
+  font-size: medium;
+}
+.custom .swiper-slide .container .details .who p {
+  font-size: 13px;
+  padding-bottom: 10px;
+  text-align: start;
+}
+.custom .swiper-slide .container .details .who .quotes {
+  font-size: 40px;
+  color: #85CB2E;
+}
+.custom .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}/*# sourceMappingURL=HomeCustomers.css.map */
