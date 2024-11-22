@@ -28,11 +28,10 @@ body {
 .info .container .left {
   width: 50%;
 }
-.info .container .left h1,
-.info .container .left .with {
+.info .container .left h1 {
   font-size: 50px;
   color: rgb(64, 62, 62);
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 .info .container .left strong {
   color: rgb(133, 203, 46);
@@ -100,6 +99,25 @@ body {
 }
 .info .container .right .options ul li .bird {
   padding-right: 10px;
+}
+.info .container .right .options .learn_more2 {
+  display: inline-block;
+  padding: 20px 55px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+  display: none;
+}
+.info .container .right .options .learn_more:hover {
+  background-color: rgb(133, 203, 46);
 }
 
 .benefits {
@@ -282,4 +300,101 @@ body {
 .callAction .container .red:hover {
   background-color: #292D35;
   transition: background-color 0.3s ease;
+}
+
+@media (max-width: 1111px) {
+  .info .container .left h1,
+  .info .container .left strong {
+    font-size: 38px !important;
+    color: red;
+  }
+}
+@media (max-width: 888px) {
+  .info .container {
+    flex-direction: column;
+  }
+  .info .container .right {
+    width: 100% !important;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 !important;
+  }
+  .info .container .right .options {
+    width: 50% !important;
+    flex-direction: column !important;
+    height: 260px !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+  .info .container .right .options .learn_more2 {
+    display: block;
+    justify-content: space-between;
+    padding: 15px 45px;
+  }
+  .info .container .right .options ul {
+    height: 40% !important;
+    justify-content: space-between;
+    font-size: 16px;
+  }
+  .info .container .right .image {
+    width: 50% !important;
+  }
+  .info .container .left {
+    width: 100% !important;
+  }
+  .info .container .left .learn_more {
+    display: none !important;
+  }
+}
+@media (max-width: 888px) {
+  .info {
+    padding-bottom: 60px;
+  }
+  .info .container .left h1 {
+    font-size: 30px !important;
+  }
+  .info .container .left strong {
+    font-size: 30px !important;
+  }
+  .info .container .right .options ul {
+    font-size: 12px;
+  }
+  .info .container .right .options .learn_more2 {
+    padding: 8px 35x;
+    font-size: 15px;
+  }
+  .benefits .container h1 {
+    font-size: 28px;
+  }
+  .benefits .container .info {
+    width: 90% !important;
+  }
+  .benefits .container ul li {
+    width: 47% !important;
+  }
+  .callAction .container h1 {
+    font-size: 30px;
+  }
+  .callAction .container button {
+    width: 300px;
+    font-size: 17px !important;
+  }
+}
+@media (max-width: 1260px) {
+  .benefits ul {
+    width: 80% !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 60px !important;
+  }
+  .benefits ul li {
+    width: 30% !important;
+  }
+  .benefits ul li .text span {
+    font-size: 15px;
+  }
+  .benefits ul li .text p {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=Home.css.map */

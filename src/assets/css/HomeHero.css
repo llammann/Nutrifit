@@ -12,7 +12,7 @@ body {
 .swiper {
   margin-top: 10px;
   width: 100%;
-  height: 110vh;
+  height: 110vh !important;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
@@ -20,13 +20,13 @@ body {
   background: #b91919;
   display: block;
   width: 100%;
-  height: 110vh;
+  height: 100% !important;
   background-color: blue;
 }
 
 .swiper-slide div.her {
   width: 100%;
-  height: 110vh;
+  height: 100%;
   background-size: cover !important;
   background-size: 100% 100%;
   background-position: center;
@@ -103,4 +103,24 @@ body {
 
 .swiper-slide .imgwrap3 .container .text {
   justify-content: right;
+}
+
+@media (max-width: 1111px) {
+  .swiper {
+    height: 100vh !important;
+  }
+  .swiper .swiper-slide div.her .container .text {
+    width: 100%;
+  }
+  .swiper .swiper-slide div.her .container .text h1 {
+    width: 100% !important;
+  }
+}
+@media (max-width: 1111px) {
+  .swiper {
+    height: 80vh !important;
+  }
+  .swiper .swiper-slide div.her .container .text h1 {
+    font-size: 30px;
+  }
 }/*# sourceMappingURL=HomeHero.css.map */

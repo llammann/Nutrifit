@@ -5,6 +5,7 @@ $primary-color: rgb(133, 203, 46);
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
     a {
         text-decoration: none;
     }
@@ -24,7 +25,6 @@ body {
 
 .hero {
     width: 100%;
-
 }
 
 .info {
@@ -40,11 +40,10 @@ body {
         .left {
             width: 50%;
 
-            h1,
-            .with {
+            h1 {
                 font-size: 50px;
                 color: rgb(64, 62, 62);
-                padding-bottom: 10px;
+                padding-bottom: 20px;
             }
 
             strong {
@@ -125,6 +124,27 @@ body {
                             padding-right: 10px;
                         }
                     }
+                }
+
+                .learn_more2 {
+                    display: inline-block;
+                    padding: 20px 55px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: white;
+                    background-color: red;
+                    border: none;
+                    border-radius: 30px;
+                    text-align: center;
+                    text-decoration: none;
+                    cursor: pointer;
+                    box-sizing: border-box;
+                    transition: background-color 0.3s ease;
+                    display: none;
+                }
+
+                .learn_more:hover {
+                    background-color: $primary-color;
                 }
             }
         }
@@ -331,7 +351,9 @@ body {
                 align-items: center;
                 justify-content: center;
                 color: white;
-            };
+            }
+
+            ;
 
 
             span {
@@ -343,6 +365,148 @@ body {
         .red:hover {
             background-color: #292D35;
             transition: background-color 0.3s ease;
+        }
+    }
+}
+
+
+@media (max-width: 1111px) {
+    .info .container {
+        .left {
+
+            h1,
+            strong {
+                font-size: 38px !important;
+                color: red;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 888px) {
+    .info .container {
+        flex-direction: column;
+
+        .right {
+            width: 100% !important;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0 !important;
+            // background-color: blue;
+
+            .options {
+                width: 50% !important;
+                flex-direction: column !important;
+                height: 260px !important;
+                // background-color: red;
+                align-items: center !important;
+                justify-content: space-between !important;
+
+                .learn_more2 {
+                    display: block;
+                    justify-content: space-between;
+                    padding: 15px 45px;
+                }
+
+                ul {
+                    height: 40% !important;
+                    justify-content: space-between;
+                    font-size: 16px;
+                }
+            }
+
+            .image {
+                width: 50% !important;
+            }
+        }
+
+        .left {
+            width: 100% !important;
+
+            .learn_more {
+                display: none !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 888px) {
+
+    .info {
+        padding-bottom: 60px;
+
+        .container {
+            .left {
+                h1 {
+                    font-size: 30px !important;
+                }
+
+                strong {
+                    font-size: 30px !important;
+                }
+            }
+
+            .right .options {
+                ul {
+                    font-size: 12px;
+                }
+
+                .learn_more2 {
+                    padding: 8px 35x;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .benefits .container {
+        h1 {
+            font-size: 28px;
+        }
+
+        .info {
+            width: 90% !important;
+        }
+
+        ul li {
+            width: 47% !important;
+        }
+    }
+
+    .callAction .container {
+        h1 {
+            font-size: 30px;
+        }
+
+        button {
+            width: 300px;
+            font-size: 17px !important;
+        }
+    }
+}
+
+@media (max-width: 1260px) {
+
+    .benefits ul {
+        width: 80% !important;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 60px !important;
+
+        li {
+            width: 30% !important;
+
+            .text {
+                span {
+                    font-size: 15px;
+                }
+
+                p {
+                    font-size: 10px;
+                }
+            }
         }
     }
 }

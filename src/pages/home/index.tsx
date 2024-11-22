@@ -12,7 +12,7 @@ import { GiFruitBowl } from "react-icons/gi";
 import { FaLeaf } from "react-icons/fa";
 import { BsArrowRepeat } from "react-icons/bs";
 
-export const Home = () => {
+export const Home = () => { 
   return (
     <>
       <section className="hero">
@@ -21,8 +21,8 @@ export const Home = () => {
       <section className="info">
         <div className="container">
           <div className="left">
-            <h1>Stay fit and healthy</h1>
-            <h1 className="with">with</h1>
+            <h1>Stay fit and healthy <br /> with</h1>
+            {/* <h1 className="with">with</h1> */}
             <strong>personalized plans</strong>
             <p className="text">
               NutriFit helps you take control of your fitness and nutrition with
@@ -39,6 +39,7 @@ export const Home = () => {
             </div>
 
             <div className="options">
+
               <ul>
                 <li>
                   <MdOutlineDone
@@ -76,6 +77,7 @@ export const Home = () => {
                   Builds energy
                 </li>
               </ul>
+            <button className="learn_more2">Learn More</button>
             </div>
           </div>
         </div>
