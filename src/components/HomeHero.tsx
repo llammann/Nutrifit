@@ -1,11 +1,8 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { Link } from "react-router-dom";
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 
 import "../assets/style/HomeHero.scss";
 
@@ -27,7 +24,7 @@ export default function App() {
         // }}
         // navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
+        className="mySwiperHome"
       >
         <SwiperSlide>
           <div className="imgwrap1 her">
@@ -45,7 +42,7 @@ export default function App() {
                   more balanced life.
                 </p>
 
-                <button>Start Your Journey Now</button>
+                <Link to="https://play.google.com/store/apps/details?id=io.harbiz.nutrifit"><button>Start Your Journey Now</button></Link>
               </div>
             </div>
           </div>
@@ -68,7 +65,7 @@ export default function App() {
                   are.
                 </p>
 
-                <button>Track Your Progress Today</button>
+                <Link to="https://play.google.com/store/apps/details?id=io.harbiz.nutrifit"><button>Track Your Progress Today</button></Link>
               </div>
             </div>
           </div>
@@ -87,7 +84,7 @@ export default function App() {
                   that help you eat smarter, not harder
                 </p>
 
-                <button>Track Your Progress Today</button>
+                <Link to="https://play.google.com/store/apps/details?id=io.harbiz.nutrifit"><button>Track Your Progress Today</button></Link>
               </div>
             </div>
           </div>
@@ -106,7 +103,7 @@ export default function App() {
                   keeps you motivated every step of the way.
                 </p>
 
-                <button>Download Now and Join Us</button>
+               <Link to="https://play.google.com/store/apps/details?id=io.harbiz.nutrifit"> <button>Download Now and Join Us</button></Link>
               </div>
             </div>
           </div>

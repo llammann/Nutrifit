@@ -1,9 +1,8 @@
-// Variables
 $primary-color: rgb(133, 203, 46);
 
 .info {
     width: 100%;
-    padding: 60px 0 100px 0;
+    padding: 60px 0;
 
 
     .container {
@@ -14,16 +13,16 @@ $primary-color: rgb(133, 203, 46);
         .left {
             width: 50%;
 
-            h1,
-            .with {
+            h1 {
                 font-size: 50px;
                 color: rgb(64, 62, 62);
-                padding-bottom: 10px;
+                padding-bottom: 20px;
             }
 
             strong {
                 color: $primary-color;
                 font-size: 50px;
+                cursor: pointer;
             }
 
             .text {
@@ -94,11 +93,33 @@ $primary-color: rgb(133, 203, 46);
                     li {
                         display: flex;
                         align-items: center;
+                        cursor: pointer;
 
                         .bird {
                             padding-right: 10px;
                         }
                     }
+                }
+
+                .learn_more2 {
+                    display: inline-block;
+                    padding: 20px 55px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: white;
+                    background-color: red;
+                    border: none;
+                    border-radius: 30px;
+                    text-align: center;
+                    text-decoration: none;
+                    cursor: pointer;
+                    box-sizing: border-box;
+                    transition: background-color 0.3s ease;
+                    display: none;
+                }
+
+                .learn_more:hover {
+                    background-color: $primary-color;
                 }
             }
         }
@@ -145,12 +166,11 @@ $primary-color: rgb(133, 203, 46);
     box-shadow: 2px -2px 46px 17px rgba(0, 0, 0, 0.41) inset;
     -webkit-box-shadow: 2px -2px 46px 17px rgba(0, 0, 0, 0.41) inset;
     -moz-box-shadow: 2px -2px 46px 17px rgba(0, 0, 0, 0.41) inset;
+    padding: 100px 0;
 
     .container {
         width: 1200px;
         margin: auto;
-        padding: 100px 0;
-        padding-bottom: 120px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -158,7 +178,7 @@ $primary-color: rgb(133, 203, 46);
         .left {
             // background-color: red;
             width: 50%;
-            height: 420px !important;
+            // height: 420px !important;
             padding: 50px 90px;
             padding-left: 0;
             display: flex;
@@ -181,6 +201,7 @@ $primary-color: rgb(133, 203, 46);
 
                 span {
                     color: $primary-color;
+                    cursor: pointer;
                 }
             }
 
@@ -198,6 +219,7 @@ $primary-color: rgb(133, 203, 46);
                 align-items: center;
                 justify-content: start;
                 padding-bottom: 15px;
+                cursor: pointer;
 
                 .mark {
                     color: $primary-color;
@@ -217,12 +239,8 @@ $primary-color: rgb(133, 203, 46);
 }
 
 .metrics {
-    // box-shadow: -1px 53px 76px -33px rgba(0,0,0,0.76) inset;
-    // -webkit-box-shadow: -1px 53px 76px -33px rgba(0,0,0,0.76) inset;
-    // -moz-box-shadow: -1px 53px 76px -33px rgba(0,0,0,0.76) inset;
     width: 100%;
     padding: 100px 0 100px 0;
-    // background-color: red;
     background: linear-gradient(135deg, #85CB2E, #54811d);
 
     span {
@@ -241,8 +259,108 @@ $primary-color: rgb(133, 203, 46);
     }
 
     .container {
-        width: 100%;
+        width: 1200px;
         margin: auto;
         background-color: transparent;
+    }
+}
+
+@media (max-width: 1111px) {
+    .info .container {
+        .left {
+
+            h1,
+            strong {
+                font-size: 30px !important;
+            }
+        }
+
+    }
+
+    .transformation {
+        .container {
+            flex-direction: column;
+
+            .left,
+            .right {
+                width: 100%;
+            }
+
+            .right {
+                height: 600px;
+            }
+
+            .left {
+                padding-top: 0;
+                padding-right: 0;
+
+                h1 {
+                    font-size: 30px;
+                    line-height: 180%;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+
+            }
+        }
+    }
+
+}
+
+@media (max-width: 888px) {
+    .info .container {
+        flex-direction: column;
+
+        .right {
+            width: 100% !important;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0 !important;
+            // background-color: blue;
+
+            .options {
+                width: 50% !important;
+                flex-direction: column !important;
+                height: 260px !important;
+                // background-color: red;
+                align-items: center !important;
+                justify-content: space-between !important;
+
+                .learn_more2 {
+                    display: block;
+                    justify-content: space-between;
+                    padding: 15px 45px;
+                }
+
+                ul {
+                    height: 40% !important;
+                    justify-content: space-between;
+                    font-size: 16px;
+                }
+            }
+
+            .image {
+                width: 50% !important;
+            }
+        }
+
+        .left {
+            width: 100% !important;
+
+            .learn_more {
+                display: none !important;
+            }
+        }
+    }
+
+    .transformation .container {
+        .right {
+            height: 280px;
+            width: 100%;
+        }
+
+        .left {}
     }
 }

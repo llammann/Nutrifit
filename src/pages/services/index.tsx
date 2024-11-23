@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { SlClock } from "react-icons/sl";
 import { FiPhoneCall } from "react-icons/fi";
 
@@ -35,7 +36,7 @@ export const Services = () => {
                 </span>
               </li>
             </ul>
-            <button>Download Now</button>
+            <Link to="https://play.google.com/store/apps/details?id=io.harbiz.nutrifit"><button>Download Now</button></Link>
           </div>
         </div>
       </section>

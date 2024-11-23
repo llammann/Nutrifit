@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../../components/HomeHero";
-
+import { Link } from "react-router-dom";
 import "../../assets/style/Home.scss";
 import health from "../../assets/images/health-bottle-cut.jpg";
 import {
@@ -22,7 +22,6 @@ export const Home = () => {
         <div className="container">
           <div className="left">
             <h1>Stay fit and healthy <br /> with</h1>
-            {/* <h1 className="with">with</h1> */}
             <strong>personalized plans</strong>
             <p className="text">
               NutriFit helps you take control of your fitness and nutrition with
@@ -30,7 +29,7 @@ export const Home = () => {
               real-time tracking to ensure you achieve your health goals
               effectively. Stay motivated and reach your best self!
             </p>
-            <button className="learn_more">Learn More</button>
+            <Link to="https://play.google.com/store/apps/details?id=io.harbiz.nutrifit"><button className="learn_more">Learn More</button></Link>
           </div>
 
           <div className="right">
@@ -77,7 +76,7 @@ export const Home = () => {
                   Builds energy
                 </li>
               </ul>
-            <button className="learn_more2">Learn More</button>
+            <Link to="https://play.google.com/store/apps/details?id=io.harbiz.nutrifit"><button className="learn_more2">Learn More</button></Link>
             </div>
           </div>
         </div>
@@ -169,10 +168,10 @@ export const Home = () => {
     <p>
       Ready to transform your lifestyle? Get personalized health tips, fitness tracking, and wellness advice at your fingertips. Take the first step today!
     </p>
-    <button>
+   <Link to="https://play.google.com/store/apps/details?id=io.harbiz.nutrifit"> <button>
       <span>Download </span>
       <span className="red">Our App Now</span>
-    </button>
+    </button></Link>
   </div>
 </section>
 

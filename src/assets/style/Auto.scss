@@ -23,7 +23,7 @@
         padding: 30px;
         background-color: rgb(46, 46, 46);
         // box-shadow: rgba(0, 0, 0, 0.823) 25px 0px;
-
+cursor: pointer;
         &:hover {
             transform: scale(1.1);
             box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
@@ -89,5 +89,19 @@
             max-width: 300px;
             margin: auto;
         }
+    }
+}
+
+
+
+@media (max-width: 1111px) {
+    .auto .swiper {
+        height: min-content !important;
+    }
+}
+
+@media (max-width: 955px) {
+    auto .slide-content p {
+        color: red;
     }
 }

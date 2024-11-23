@@ -8,7 +8,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import logo from "../../assets/images/logo.png";
 import text from "../../assets/images/yazi.png";
 import { NavLink } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 import { MenuOutlined } from "@ant-design/icons";
 import { Dropdown } from "antd";
 export const Navbar = () => {
@@ -65,19 +65,19 @@ export const Navbar = () => {
         </a>
       ),
     },
-    {
-      key: "5",
-      label: (
-        <a
-          target=""
-          rel="noopener noreferrer"
-          href="/contact"
-          style={{ textDecoration: "none" }}
-        >
-          Contact
-        </a>
-      ),
-    },
+    // {
+    //   key: "5",
+    //   label: (
+    //     <a
+    //       target=""
+    //       rel="noopener noreferrer"
+    //       href="/contact"
+    //       style={{ textDecoration: "none" }}
+    //     >
+    //       Contact
+    //     </a>
+    //   ),
+    // },
   ];
 
   return (
@@ -89,7 +89,12 @@ export const Navbar = () => {
               <span className="tel">
                 Call us:{" "}
                 <span>
-                  <strong>+994-55-9956118</strong>
+                <Link
+      to="#"
+      onClick={() => {
+        window.location.href = "tel:+994559956118";
+      }}
+    ><strong>+994-55-9956118</strong></Link>
                 </span>
               </span>
             </div>
@@ -103,10 +108,11 @@ export const Navbar = () => {
           <div className="right">
             <span>Follow: </span>
             <div className="icons">
-              <FaFacebookF style={{ color: "rgb(98, 175, 3)" }} />
-              <FaTwitter style={{ color: "rgb(98, 175, 3)" }} />
-              <FaInstagram style={{ color: "rgb(98, 175, 3)" }} />
-              <FaLinkedinIn style={{ color: "rgb(98, 175, 3)" }} />
+              
+              <Link to="https://www.facebook.com/"><FaFacebookF style={{ color: "rgb(98, 175, 3)" }} /></Link>
+              <Link to="https://x.com/"><FaTwitter style={{ color: "rgb(98, 175, 3)" }} /></Link>
+              <Link to="https://www.instagram.com/"><FaInstagram style={{ color: "rgb(98, 175, 3)" }} /></Link>
+              <Link to="https://www.linkedin.com/"><FaLinkedinIn style={{ color: "rgb(98, 175, 3)" }} /></Link>
             </div>
           </div>
           
@@ -169,7 +175,7 @@ export const Navbar = () => {
                 Testimonials
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
@@ -178,7 +184,7 @@ export const Navbar = () => {
               >
                 Contact
               </NavLink>
-            </li>
+            </li> */}
           </ul>
           <Dropdown
             className="dropdownMenu"

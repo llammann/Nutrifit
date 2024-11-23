@@ -5,7 +5,7 @@ import { MdOutlineDone } from "react-icons/md";
 import health from "../../assets/images/health-bottle-cut.jpg";
 import BeforeAfter from "../../components/BeforeAfter";
 import Auto from "../../components/Auto";
-
+import { Link } from "react-router-dom";
 export const Testimonials = () => {
   return (
     <>
@@ -21,7 +21,7 @@ export const Testimonials = () => {
               real-time tracking to ensure you achieve your health goals
               effectively. Stay motivated and reach your best self!
             </p>
-            <button className="learn_more">Learn More</button>
+            <Link to="https://play.google.com/store/apps/details?id=io.harbiz.nutrifit"><button className="learn_more">Learn More</button></Link>
           </div>
 
           <div className="right">
@@ -67,6 +67,7 @@ export const Testimonials = () => {
                   Builds energy
                 </li>
               </ul>
+              <Link to="https://play.google.com/store/apps/details?id=io.harbiz.nutrifit"><button className="learn_more2">Learn More</button></Link>
             </div>
           </div>
         </div>

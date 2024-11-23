@@ -119,7 +119,7 @@ export const AboutUs = () => {
           <div className="team-members">
             <div className="team-member">
               <div className="team-member-image">
-                <img src="https://s3.eu-west-3.amazonaws.com/hbtn.intranet/users/photos/000/008/702/thumb/WhatsApp-Image-2024-02-05-at-12.58.38.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20241122%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20241122T081247Z&X-Amz-Expires=600&X-Amz-SignedHeaders=host&X-Amz-Signature=84640469115cd9d3b0f460296af1359d4cb06cf33c16ab56a7fc3e454a2f64d3" alt="Team Member 1" />
+              <img src={anim} alt="Team Member 1" />
               </div>
               <div className="team-member-info">
                 <h3>Aysu Sadikhova</h3>
@@ -143,7 +143,7 @@ export const AboutUs = () => {
 
             <div className="team-member">
               <div className="team-member-image">
-                <img src="https://s3.eu-west-3.amazonaws.com/hbtn.intranet/users/photos/000/008/942/thumb/kamal.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20241122%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20241122T081247Z&X-Amz-Expires=600&X-Amz-SignedHeaders=host&X-Amz-Signature=8c1b8b1d9a5593f214df8ee0f456e438142067d0afd44ff01b46ce33660d33f4" alt="Team Member 1" />
+              <img src={anim} alt="Team Member 1" />
               </div>
               <div className="team-member-info">
                 <h3>Kamal Abdullayev</h3>
@@ -166,7 +166,7 @@ export const AboutUs = () => {
             </div>
             <div className="team-member">
               <div className="team-member-image">
-                <img src="https://s3.eu-west-3.amazonaws.com/hbtn.intranet/users/photos/000/008/849/thumb/1658389201379_%281%29.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20241122%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20241122T081247Z&X-Amz-Expires=600&X-Amz-SignedHeaders=host&X-Amz-Signature=ac4f36e157d70cc3407ade97a04a5eef7a2b383f29ff24255082458521893cf5" alt="Team Member 1" />
+              <img src={anim} alt="Team Member 1" />
               </div>
               <div className="team-member-info">
                 <h3>Ravan Mustafazada</h3>

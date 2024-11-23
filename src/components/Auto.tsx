@@ -1,19 +1,12 @@
 import React from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FaStar } from "react-icons/fa6";
 import { IoPeopleCircleOutline } from "react-icons/io5";
 import { FaBullseye } from "react-icons/fa";
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
 import "./../assets/style/Auto.scss";
 
-// Import required modules
-import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 
 export default function Auto() {
   return (
@@ -21,7 +14,7 @@ export default function Auto() {
       <Swiper
         spaceBetween={40}
         centeredSlides={false}
-        slidesPerView={2} // Show part of the next slide
+        slidesPerView={2}
         loop={true}
         autoplay={{
           delay: 3000,
@@ -30,6 +23,15 @@ export default function Auto() {
         navigation={false}
         modules={[Autoplay, Navigation]}
         className="mySwiper"
+        breakpoints={{
+          945: {
+            slidesPerView: 2,
+          },
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 90,
+          },
+        }}
       >
         <SwiperSlide>
           <div className="slide-content">

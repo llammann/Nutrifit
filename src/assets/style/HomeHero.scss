@@ -4,15 +4,15 @@
 
 html,
 body {
-    height: 110vh;
+    height: 100vh;
     margin: 0;
     /* Remove any extra margin around the body */
 }
 
-.swiper {
+.mySwiperHome {
     margin-top: 10px;
     width: 100%;
-    height: 110vh !important;
+    height: 100vh !important;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
@@ -27,7 +27,7 @@ body {
 
 .swiper-slide div.her {
     width: 100%;
-    height: 100%;
+    height: 100%!important;
     background-size: cover !important;
     background-size: 100% 100%;
     background-position: center;
@@ -138,7 +138,7 @@ body {
 @media (max-width: 1111px) {
     .swiper {
 
-        height: 100vh!important;
+        // height: 100vh!important;
         .swiper-slide div.her .container .text {
             width: 100%;
 
@@ -151,7 +151,7 @@ body {
 
 @media (max-width: 1111px) {
     .swiper {
-        height: 80vh !important;
+        height: 100vh !important;
 
         .swiper-slide div.her .container .text h1 {
             font-size: 30px;
