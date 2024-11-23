@@ -1,12 +1,8 @@
-import React, { useRef, useState } from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
-// Import Swiper styles
 
 import "../assets/style/HomeHero.scss";
 
-// import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 export default function App() {
@@ -15,10 +11,10 @@ export default function App() {
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
-        // autoplay={{
-        //   delay: 2000,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
         // pagination={{
         //   clickable: false,
         // }}

@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { SlClock } from "react-icons/sl";
 import { FiPhoneCall } from "react-icons/fi";

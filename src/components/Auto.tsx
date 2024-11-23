@@ -1,4 +1,3 @@
-import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FaStar } from "react-icons/fa6";
 import { IoPeopleCircleOutline } from "react-icons/io5";

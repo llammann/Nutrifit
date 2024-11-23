@@ -1,4 +1,3 @@
-import React from "react";
 import "../../assets/style/Navbar.scss";
 import { FaRegClock } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";

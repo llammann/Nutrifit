@@ -1,4 +1,3 @@
-import React from "react";
 import Hero from "../../components/HomeHero";
 import { Link } from "react-router-dom";
 import "../../assets/style/Home.scss";

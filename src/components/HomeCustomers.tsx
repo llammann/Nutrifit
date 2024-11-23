@@ -10,8 +10,6 @@ import "../assets/style/HomeCustomers.scss";
 
 import { Pagination } from "swiper/modules";
 
-import { useDispatch } from "react-redux";
-import { AppDispatch } from "../redux/store";
 export default function Homecustomerswiper() {
 
   return (

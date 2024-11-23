@@ -1,4 +1,3 @@
-import React from "react";
 import Feedbakcs from "../../components/HomeCustomers";
 import "../../assets/style/Testimonials.scss";
 import { MdOutlineDone } from "react-icons/md";

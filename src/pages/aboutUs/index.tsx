@@ -1,4 +1,3 @@
-import React from "react";
 import "../../assets/style/AboutUs.scss";
 
 import { IoIosArrowDown } from "react-icons/io";
