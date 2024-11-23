@@ -1,7 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
 import "./../assets/style/BeforeAfter.scss";
 import { Pagination, Autoplay } from "swiper/modules";
-import "swiper/css";
 import "swiper/css/pagination";
 export default function BeforeAfter() {
   return (
