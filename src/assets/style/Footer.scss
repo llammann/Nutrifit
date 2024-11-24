@@ -1,0 +1,278 @@
+footer {
+    padding: 80px 0;
+    width: 100%;
+    background-color: black;
+margin-bottom: 70px;
+    .container {
+        width: 1200px;
+        margin: auto;
+        background-color: green($color: #99d81a);
+        display: flex;
+        justify-content: space-between;
+        color: #85CB2E;
+        border-bottom: 1px solid #555;
+        padding-bottom: 50px;
+
+        .left {
+            width: 49%;
+            display: flex;
+            justify-content: space-between;
+
+            .nutrifit {
+                width: 49%;
+
+                .logos {
+                    display: flex;
+                    align-items: start;
+                    margin-bottom: 20px;
+
+                    .logo_img {
+                        width: 40px;
+                        height: 40px;
+                        margin-right: 10px;
+                    }
+
+                    .logo_text {
+                        height: 35px;
+                    }
+                }
+
+                ul {
+                    list-style-type: none;
+                    padding-top: 30px;
+
+                    li {
+                        padding: 10px 0;
+                        display: flex;
+                        align-items: center;
+                        color: #82C72D;
+
+                        :hover {
+                            color: #FE7C0E;
+                        }
+
+                        .ico {
+                            font-size: 20px;
+                            margin-right: 10px;
+                            color: #acf05a;
+                        }
+
+                        span {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+
+            .links {
+                width: 49%;
+                display: flex;
+                flex-direction: column;
+                // align-items: start;
+
+                h3 {
+                    color: #FE7C0E;
+                    font-size: 29px;
+                    padding-top: 3px;
+                    margin-bottom: 20px;
+                }
+
+                .pages {
+                    list-style: none;
+                    color: #ffffff;
+                    margin: 0;
+                    padding: 0;
+                    margin-bottom: 35px;
+
+                    li {
+                        padding-bottom: 15px;
+                    }
+                }
+
+                .follow {
+                    h5 {
+                        font-size: 18px;
+                        color: #ffffff;
+                        padding-bottom: 15px;
+                    }
+
+                    .icons {
+                        .fol {
+                            font-size: 30px;
+                            color: #85CB2E;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .right {
+            width: 49%;
+            display: flex;
+            justify-content: space-between;
+
+            .best {
+                width: 48%;
+
+                h3 {
+                    color: #FE7C0E;
+                    font-size: 29px;
+                    padding-top: 3px;
+                    margin-bottom: 20px;
+                }
+
+                .imgWrap {
+                    width: 100%;
+                    background-color: red;
+                    height: 150px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                p {
+                    color: white;
+                    padding: 20px 0 16px 0;
+                    font-size: 18px;
+                }
+            }
+
+            .insta {
+                width: 48%;
+                // box-sizing: border-box;
+
+                h3 {
+                    color: #fe7c0e;
+                    font-size: 29px;
+                    padding-top: 3px;
+                    margin-bottom: 20px;
+                }
+
+                .image-grid {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    /* Add spacing between lines */
+
+                    .line {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                    }
+                }
+
+                .square {
+                    border-radius: 5px;
+                    width: 32%;
+                    overflow: hidden;
+                    /* Ensure no overflow on hover */
+
+                    img {
+                        width: 100%;
+                        height: 80px;
+                        object-fit: cover;
+                        position: relative;
+                        transition: transform 0.3s ease;
+                    }
+
+                    img:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    .copyright {
+        text-align: center;
+        margin-top: 20px;
+        padding: 10px 0;
+        font-size: 14px;
+        color: #555;
+
+        p {
+            // margin: 0;
+        }
+    }
+
+}
+
+@media screen and (max-width: 1298px) {
+    footer {
+        .container {
+            flex-direction: column;
+
+            .left,
+            .right {
+                width: 100%;
+
+                h3 {
+                    font-size: 25px !important;
+                }
+            }
+
+            .nutrifit {
+                margin-bottom: 40px;
+
+                p {
+                    width: 80%;
+                }
+
+                ul {
+                    padding: 0px;
+                }
+            }
+
+            .best {
+                width: 30% !important;
+
+                .imgWrap {
+                    height: 120px !important;
+                }
+            }
+
+            // .left .links {
+            //     display: flex !important;
+            //     margin-bottom: 40px;
+            //     justify-content: end !important;
+            // }
+
+            .insta {
+                .image-grid {
+                    height: 10px !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 643px) {
+    footer {
+        .left,
+        .right {
+            flex-direction: column;
+        }
+
+        .nutrifit,
+        .links,
+        .best,
+        .insta {
+            width: 92% !important;
+            margin-top: 20px;
+        }
+
+        .right .best {
+            width: 92% !important;
+        }
+
+        .insta {
+            margin-bottom: 170px;
+        }
+    }
+}

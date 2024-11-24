@@ -88,12 +88,14 @@ export const Navbar = () => {
               <span className="tel">
                 Call us:{" "}
                 <span>
-                <Link
-      to="#"
-      onClick={() => {
-        window.location.href = "tel:+994559956118";
-      }}
-    ><strong>+994-55-9956118</strong></Link>
+                  <Link
+                    to="#"
+                    onClick={() => {
+                      window.location.href = "tel:+994559956118";
+                    }}
+                  >
+                    <strong>+994-55-9956118</strong>
+                  </Link>
                 </span>
               </span>
             </div>
@@ -107,14 +109,20 @@ export const Navbar = () => {
           <div className="right">
             <span>Follow: </span>
             <div className="icons">
-              
-              <Link to="https://www.facebook.com/"><FaFacebookF style={{ color: "rgb(98, 175, 3)" }} /></Link>
-              <Link to="https://x.com/"><FaTwitter style={{ color: "rgb(98, 175, 3)" }} /></Link>
-              <Link to="https://www.instagram.com/"><FaInstagram style={{ color: "rgb(98, 175, 3)" }} /></Link>
-              <Link to="https://www.linkedin.com/"><FaLinkedinIn style={{ color: "rgb(98, 175, 3)" }} /></Link>
+              <Link to="https://www.facebook.com/">
+                <FaFacebookF style={{ color: "rgb(98, 175, 3)" }} />
+              </Link>
+              <Link to="https://x.com/">
+                <FaTwitter style={{ color: "rgb(98, 175, 3)" }} />
+              </Link>
+              <Link to="https://www.instagram.com/">
+                <FaInstagram style={{ color: "rgb(98, 175, 3)" }} />
+              </Link>
+              <Link to="https://www.linkedin.com/">
+                <FaLinkedinIn style={{ color: "rgb(98, 175, 3)" }} />
+              </Link>
             </div>
           </div>
-          
         </div>
       </section>
 
