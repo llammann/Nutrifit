@@ -251,6 +251,7 @@ $hover-scale: 1.05;
         transition: transform 0.3s ease-in-out;
         background: rgb(42, 71, 14);
         background: linear-gradient(0deg, rgba(42, 71, 14, 1) 7%, rgba(30, 46, 20, 0.9724264705882353) 70%);
+        background: #85CB2E;
 
         &:hover {
             transform: scale($hover-scale);
@@ -283,6 +284,10 @@ $hover-scale: 1.05;
             i,
             .accordion-header {
                 transition: opacity 0.3s ease, visibility 0.3s ease;
+            }
+
+            h3 {
+                color: black;
             }
 
             .accordion {
@@ -321,7 +326,7 @@ $hover-scale: 1.05;
 
             i {
                 font-size: 13px;
-                color: #85CB2E;
+                color: black;
                 display: block;
                 margin-bottom: 15px;
             }
@@ -331,8 +336,9 @@ $hover-scale: 1.05;
                 font-weight: bold;
                 width: 100%;
                 text-align: center;
-                border-bottom: 1px solid white;
+                border-bottom: 1px solid #1D9229;
                 padding-bottom: 8px;
+                color: #1D9229;
 
                 .down {
                     padding-left: 5px;
@@ -350,7 +356,7 @@ $hover-scale: 1.05;
 
                 .accordion-content {
                     font-size: 14px;
-                    color: #85CB2E;
+                    color: black;
                     line-height: 180%;
 
                     span {

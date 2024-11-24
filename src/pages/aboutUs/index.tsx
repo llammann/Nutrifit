@@ -6,6 +6,11 @@ import anim from "../../assets/images/anim.png";
 import hwoman from "../../assets/images/hwoman.png";
 import man from "../../assets/images/man.png";
 import watch from "../../assets/images/watch.png";
+import ravan from "../../assets/images/ravan.png"
+import aysu from "../../assets/images/aysu.png"
+import kamal from "../../assets/images/kamal.png"
+import laman from "../../assets/images/laman.png"
+import Auto from "../../components/Auto";
 export const AboutUs = () => {
   return (
     <>
@@ -118,7 +123,7 @@ export const AboutUs = () => {
           <div className="team-members">
             <div className="team-member">
               <div className="team-member-image">
-              <img src={anim} alt="Team Member 1" />
+              <img src={aysu} alt="Team Member 1" />
               </div>
               <div className="team-member-info">
                 <h3>Aysu Sadikhova</h3>
@@ -142,7 +147,7 @@ export const AboutUs = () => {
 
             <div className="team-member">
               <div className="team-member-image">
-              <img src={anim} alt="Team Member 1" />
+              <img src={kamal} alt="Team Member 1" />
               </div>
               <div className="team-member-info">
                 <h3>Kamal Abdullayev</h3>
@@ -165,7 +170,7 @@ export const AboutUs = () => {
             </div>
             <div className="team-member">
               <div className="team-member-image">
-              <img src={anim} alt="Team Member 1" />
+              <img src={ravan} alt="Team Member 1" />
               </div>
               <div className="team-member-info">
                 <h3>Ravan Mustafazada</h3>
@@ -188,7 +193,7 @@ export const AboutUs = () => {
             </div>
             <div className="team-member">
               <div className="team-member-image">
-                <img src={anim} alt="Team Member 1" />
+                <img src={laman} alt="Team Member 1" />
               </div>
               <div className="team-member-info">
                 <h3>Laman Nazirli</h3>
@@ -210,6 +215,12 @@ export const AboutUs = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="metrics">
+        <div className="container">
+          <Auto/>
         </div>
       </section>
     </>

@@ -103,6 +103,26 @@ export const Services = () => {
           </div>
         </div>
       </section>
+
+      <section className="callAction">
+        <div className="container">
+          <h1>
+            Your Health Journey Starts with <span>NutriFit</span>
+          </h1>
+          <p>
+            Ready to transform your lifestyle? Get personalized health tips,
+            fitness tracking, and wellness advice at your fingertips. Take the
+            first step today!
+          </p>
+          <Link to="https://play.google.com/store/apps/details?id=io.harbiz.nutrifit">
+            {" "}
+            <button>
+              <span>Download </span>
+              <span className="red">Our App Now</span>
+            </button>
+          </Link>
+        </div>
+      </section>
     </>
   );
 };

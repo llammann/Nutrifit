@@ -11,7 +11,7 @@ import { GiFruitBowl } from "react-icons/gi";
 import { FaLeaf } from "react-icons/fa";
 import { BsArrowRepeat } from "react-icons/bs";
 
-export const Home = () => { 
+export const Home = () => {
   return (
     <>
       <section className="hero">
@@ -20,7 +20,9 @@ export const Home = () => {
       <section className="info">
         <div className="container">
           <div className="left">
-            <h1>Stay fit and healthy <br /> with</h1>
+            <h1>
+              Stay fit and healthy <br /> with
+            </h1>
             <strong>personalized plans</strong>
             <p className="text">
               NutriFit helps you take control of your fitness and nutrition with
@@ -28,7 +30,9 @@ export const Home = () => {
               real-time tracking to ensure you achieve your health goals
               effectively. Stay motivated and reach your best self!
             </p>
-            <Link to="https://play.google.com/store/apps/details?id=io.harbiz.nutrifit"><button className="learn_more">Learn More</button></Link>
+            <Link to="https://play.google.com/store/apps/details?id=io.harbiz.nutrifit">
+              <button className="learn_more">Learn More</button>
+            </Link>
           </div>
 
           <div className="right">
@@ -37,7 +41,6 @@ export const Home = () => {
             </div>
 
             <div className="options">
-
               <ul>
                 <li>
                   <MdOutlineDone
@@ -75,7 +78,9 @@ export const Home = () => {
                   Builds energy
                 </li>
               </ul>
-            <Link to="https://play.google.com/store/apps/details?id=io.harbiz.nutrifit"><button className="learn_more2">Learn More</button></Link>
+              <Link to="https://play.google.com/store/apps/details?id=io.harbiz.nutrifit">
+                <button className="learn_more2">Learn More</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -153,27 +158,27 @@ export const Home = () => {
         </div>
       </section>
 
-      
-
-
-
       <div className="testi"></div>
 
       <section className="callAction">
-  <div className="container">
-    <h1>
-      Your Health Journey Starts with <span>NutriFit</span>
-    </h1>
-    <p>
-      Ready to transform your lifestyle? Get personalized health tips, fitness tracking, and wellness advice at your fingertips. Take the first step today!
-    </p>
-   <Link to="https://play.google.com/store/apps/details?id=io.harbiz.nutrifit"> <button>
-      <span>Download </span>
-      <span className="red">Our App Now</span>
-    </button></Link>
-  </div>
-</section>
-
+        <div className="container">
+          <h1>
+            Your Health Journey Starts with <span>NutriFit</span>
+          </h1>
+          <p>
+            Ready to transform your lifestyle? Get personalized health tips,
+            fitness tracking, and wellness advice at your fingertips. Take the
+            first step today!
+          </p>
+          <Link to="https://play.google.com/store/apps/details?id=io.harbiz.nutrifit">
+            {" "}
+            <button>
+              <span>Download </span>
+              <span className="red">Our App Now</span>
+            </button>
+          </Link>
+        </div>
+      </section>
     </>
   );
 };
