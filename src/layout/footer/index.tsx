@@ -1,6 +1,5 @@
 import logo_img from "../../assets/images/logo.png";
 import logo_text from "../../assets/images/yazi.png";
-import foody from "../../assets/images/foody.png";
 import insta from "../../assets/images/insta.png";
 
 import { MdPlace } from "react-icons/md";

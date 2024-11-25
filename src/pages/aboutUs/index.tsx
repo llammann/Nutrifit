@@ -2,7 +2,6 @@ import "../../assets/style/AboutUs.scss";
 
 import { IoIosArrowDown } from "react-icons/io";
 
-import anim from "../../assets/images/anim.png";
 import hwoman from "../../assets/images/hwoman.png";
 import man from "../../assets/images/man.png";
 import watch from "../../assets/images/watch.png";
