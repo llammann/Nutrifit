@@ -242,7 +242,8 @@ $primary-color: rgb(133, 203, 46);
     width: 100%;
     padding: 100px 0 100px 0;
     background: linear-gradient(135deg, #85CB2E, #54811d);
-background:#85CB2E ;
+    background: #85CB2E;
+
     span {
 
         font-size: 25px;
@@ -357,10 +358,8 @@ background:#85CB2E ;
 
     .transformation .container {
         .right {
-            height: 280px;
+            height: 380px;
             width: 100%;
         }
-
-        .left {}
     }
 }

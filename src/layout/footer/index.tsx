@@ -37,8 +37,14 @@ export const Footer = () => {
                 <li>
                   <MdPlace className="ico" />
                   <span>
-                    102 A.M Sharifzadeh, Yasamal, Baku, <br />
-                    Azerbaijan
+                    <a
+                      href="https://www.google.com/maps?q=102+A.M+Sharifzadeh,+Yasamal,+Baku,+Azerbaijan"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      102 A.M Sharifzadeh, Yasamal, Baku, <br />
+                      Azerbaijan
+                    </a>
                   </span>
                 </li>
 
@@ -57,10 +63,18 @@ export const Footer = () => {
             <div className="links">
               <h3>Links</h3>
               <ul className="pages">
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Services</li>
-                <li>Testimonials</li>
+                <li>
+                  <Link to="/">Home</Link>
+                </li>
+                <li>
+                  <Link to="/aboutUs">About Us</Link>
+                </li>
+                <li>
+                  <Link to="/services">Services</Link>
+                </li>
+                <li>
+                  <Link to="testimonials">Testimonials</Link>
+                </li>
               </ul>
 
               <div className="follow">
@@ -135,28 +149,28 @@ export const Footer = () => {
                   </div>
                 </div>
 
-               <div className="line">
-               <div className="square">
-                  <img src={insta} alt="Part 1" />
+                <div className="line">
+                  <div className="square">
+                    <img src={insta} alt="Part 1" />
+                  </div>
+                  <div className="square">
+                    <Link to="https://www.instagram.com/">
+                      {" "}
+                      <img
+                        src="https://media.istockphoto.com/id/1410779810/photo/food-products-recommended-for-pregnancy-healthy-diet.jpg?s=612x612&w=0&k=20&c=DGtvzdBBOAfbsKl2pWDzsicXuMTOUkX-v-aAM1UYN1k="
+                        alt="Part 2"
+                      />
+                    </Link>
+                  </div>
+                  <div className="square">
+                    <Link to="https://www.instagram.com/">
+                      <img
+                        src="https://th.bing.com/th/id/R.6c721f0830969ff6f1b416b0452e280e?rik=Kdg5UeT80nsMqg&riu=http%3a%2f%2fwww.healthyfoodhouse.com%2fwp-content%2fuploads%2f2012%2f09%2ffacts-about-healthy-food1.jpg&ehk=0h84%2fojHHY8PxxRTJCHxF8FXJd3CMzNGSGJ6LKxQL4g%3d&risl=&pid=ImgRaw&r=0"
+                        alt="Part 3"
+                      />
+                    </Link>
+                  </div>
                 </div>
-                <div className="square">
-                  <Link to="https://www.instagram.com/">
-                    {" "}
-                    <img
-                      src="https://media.istockphoto.com/id/1410779810/photo/food-products-recommended-for-pregnancy-healthy-diet.jpg?s=612x612&w=0&k=20&c=DGtvzdBBOAfbsKl2pWDzsicXuMTOUkX-v-aAM1UYN1k="
-                      alt="Part 2"
-                    />
-                  </Link>
-                </div>
-                <div className="square">
-                  <Link to="https://www.instagram.com/">
-                    <img
-                      src="https://th.bing.com/th/id/R.6c721f0830969ff6f1b416b0452e280e?rik=Kdg5UeT80nsMqg&riu=http%3a%2f%2fwww.healthyfoodhouse.com%2fwp-content%2fuploads%2f2012%2f09%2ffacts-about-healthy-food1.jpg&ehk=0h84%2fojHHY8PxxRTJCHxF8FXJd3CMzNGSGJ6LKxQL4g%3d&risl=&pid=ImgRaw&r=0"
-                      alt="Part 3"
-                    />
-                  </Link>
-                </div>
-               </div>
               </div>
             </div>
           </div>
